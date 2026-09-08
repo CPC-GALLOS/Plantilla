@@ -43,7 +43,7 @@ void solve() {
 }
 
 int main() {
-    ios::sync_with_stdio(0); cin.tie(0);
+    cin.tie(0)->sync_with_stdio(0);
     // freopen("input.txt", "r", stdin); freopen("output.txt", "w", stdout);
     int tc = 1;
     // cin >> tc;
@@ -56,7 +56,7 @@ int main() {
 
 ## ⚡ Características Principales
 
-- **Fast I/O**: `ios::sync_with_stdio(0); cin.tie(0);` y `#define endl '\n'`.
+- **Fast I/O**: `cin.tie(0)->sync_with_stdio(0);` y `#define endl '\n'`.
 - **Estructura Modular**: Separación de casos de prueba con `void solve()` y `while (tc--) solve();`.
 - **PBDS (Policy-Based Data Structures)**:
   - `ordered_set`: Operaciones en $O(\log N)$ para `find_by_order(k)` (k-ésimo elemento) y `order_of_key(x)` (conteo de elementos menores que $x$).
