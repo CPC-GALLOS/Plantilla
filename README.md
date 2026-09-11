@@ -1,10 +1,10 @@
-# Plantilla de Programación Competitiva en C++
+# C++ Competitive Programming Template
 
-Plantilla oficial del club **Γα=Ω5 (CPC Gallos)** para su uso en programación competitiva (ICPC, Codeforces, AtCoder, etc.), alineada con el [ICPC Team Reference Document (Notebook TRD)](https://github.com/CPC-GALLOS/Notebook).
+Official template of the **Γα=Ω5 (CPC Gallos)** club for competitive programming (ICPC, Codeforces, AtCoder, etc.), aligned with the [ICPC Team Reference Document (Notebook TRD)](https://github.com/CPC-GALLOS/Notebook).
 
 ---
 
-## 💻 Código de la Plantilla
+## 💻 Template Code
 
 ```cpp
 // _author_
@@ -54,29 +54,29 @@ int main() {
 
 ---
 
-## ⚡ Características Principales
+## ⚡ Key Features
 
-- **Fast I/O**: `cin.tie(0)->sync_with_stdio(0);` y `#define endl '\n'`.
-- **Estructura Modular**: Separación de casos de prueba con `void solve()` y `while (tc--) solve();`.
+- **Fast I/O**: `cin.tie(0)->sync_with_stdio(0);` and `#define endl '\n'`.
+- **Modular Structure**: Test-case separation via `void solve()` and `while (tc--) solve();`.
 - **PBDS (Policy-Based Data Structures)**:
-  - `ordered_set`: Operaciones en $O(\log N)$ para `find_by_order(k)` (k-ésimo elemento) y `order_of_key(x)` (conteo de elementos menores que $x$).
-  - `gp_hash_table`: Hash map abierto de alto rendimiento (3x-5x más rápido que `std::unordered_map`).
-- **Pragmas de Optimización TLE**:
-  - Directivas comentadas para `#pragma GCC optimize("O3,unroll-loops")` y soporte SIMD `#pragma GCC target("avx2,bmi,bmi2,lzcnt,popcnt")`.
-- **Aliases y Tipos**: `ll`, `ull`, `ld`, `pii`, `pll`.
-- **Macros Esenciales**: `all(x)`, `rall(x)`, `gs(n)` (suma Gauss), `pb`, `eb`, `sz(x)`, `yn(x)` (`YES\n`/`NO\n`), `dbg(...)`.
+  - `ordered_set`: $O(\log N)$ operations for `find_by_order(k)` ($k$-th order statistic) and `order_of_key(x)` (count of elements strictly less than $x$).
+  - `gp_hash_table`: High-performance open-addressing hash table (3x-5x faster than `std::unordered_map`).
+- **TLE Optimization Pragmas**:
+  - Commented pragmas for `#pragma GCC optimize("O3,unroll-loops")` and SIMD support `#pragma GCC target("avx2,bmi,bmi2,lzcnt,popcnt")`.
+- **Type Aliases**: `ll`, `ull`, `ld`, `pii`, `pll`.
+- **Essential Macros**: `all(x)`, `rall(x)`, `gs(n)` (Gauss summation), `pb`, `eb`, `sz(x)`, `yn(x)` (`YES\n`/`NO\n`), `dbg(...)`.
 
 ---
 
-## ⚙️ Configuración en VS Code
+## ⚙️ VS Code Configuration
 
 > [!IMPORTANT]
-> No olvides configurar la plantilla dentro de la extensión de VS Code [Competitive Programming Helper (CPH)](https://marketplace.visualstudio.com/items?itemName=DivyanshuAgrawal.competitive-programming-helper).
+> Do not forget to configure the template inside the [Competitive Programming Helper (CPH)](https://marketplace.visualstudio.com/items?itemName=DivyanshuAgrawal.competitive-programming-helper) extension for VS Code.
 
-![](https://cpc-gallos.github.io/blog/Entorno_Desarrollo/cph_settings.png)
+![](https://cpc-gallos.github.io/assets/img/posts/Entorno_Desarrollo/cph_settings.png)
 
 > [!NOTE]
-> Para conocer a detalle la justificación y análisis de cada componente de la plantilla, visita [nuestro blog](https://cpc-gallos.github.io/blog/Plantilla/).
+> To learn more about the rationale and detailed analysis of each component in this template, visit [our blog post](https://cpc-gallos.github.io/blog/Plantilla/).
 
 > [!TIP]
-> Para solucionar problemas con la cabecera `<bits/stdc++.h>` o PBDS en macOS, consulta [este post](https://cpc-gallos.github.io/blog/Entorno_Desarrollo/#instalar-el-compilador-en--macos).
+> To troubleshoot issues with `<bits/stdc++.h>` or PBDS on macOS, check [this guide](https://cpc-gallos.github.io/blog/Entorno_Desarrollo/#instalar-el-compilador-en--macos).
